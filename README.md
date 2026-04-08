@@ -64,6 +64,7 @@ The `network_mode: "service:netbird-sidecar"` directive makes `my-app` share the
 |----------|----------|---------|-------------|
 | `NB_SETUP_KEY` | Yes | — | NetBird setup key for peer enrollment |
 | `NB_MANAGEMENT_URL` | No | `https://api.netbird.io:443` | NetBird management server URL |
+| `NB_ADMIN_URL` | No | `https://app.netbird.io` | NetBird admin panel URL (required for self-hosted) |
 | `NB_HOSTNAME` | No | Container hostname | Custom hostname for this peer |
 | `NB_LOG_LEVEL` | No | `info` | Log level (`debug`, `info`, `warn`, `error`) |
 | `NB_INTERFACE_NAME` | No | `wt0` | WireGuard interface name |

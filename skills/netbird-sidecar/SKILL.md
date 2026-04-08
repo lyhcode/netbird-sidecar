@@ -116,7 +116,8 @@ docker exec netbird-sidecar netbird status           # Check VPN peer connectivi
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
 | `NB_SETUP_KEY` | Yes | — | NetBird setup key for peer enrollment |
-| `NB_MANAGEMENT_URL` | No | `https://api.netbird.io:443` | Management server URL |
+| `NB_MANAGEMENT_URL` | No | `https://api.netbird.io:443` | Management API endpoint — the gRPC service the client connects to for VPN operations |
+| `NB_ADMIN_URL` | No | `https://app.netbird.io` | Admin panel URL — required for self-hosted NetBird; points to the dashboard where peers and networks are managed |
 | `NB_HOSTNAME` | No | Container hostname | Peer hostname — NetBird uses this as the FQDN for the peer, so set it explicitly to something meaningful (e.g., `my-app-vpn`) rather than relying on the auto-generated container hostname |
 | `NB_LOG_LEVEL` | No | `info` | Log level: `debug`, `info`, `warn`, `error` |
 | `NB_INTERFACE_NAME` | No | `wt0` | WireGuard interface name |
