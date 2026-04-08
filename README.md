@@ -94,6 +94,21 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3
 
 Use `depends_on` with `condition: service_healthy` in Docker Compose to ensure dependent containers wait for the VPN to be ready.
 
+## Agent Skill
+
+This project includes an [agent skill](https://github.com/vercel-labs/skills) that helps AI coding assistants (Claude Code, Cursor, etc.) understand how to configure, deploy, troubleshoot, and develop the netbird-sidecar container.
+
+```bash
+npx skills add lyhcode/netbird-sidecar
+```
+
+The skill covers:
+
+- Sidecar pattern setup and Docker Compose integration
+- Environment variables and hostname-as-FQDN guidance
+- Common troubleshooting (capabilities, setup key, health check)
+- Project development and CI/CD release process
+
 ## Multi-Architecture
 
 Supported platforms: `linux/amd64`, `linux/arm64`
