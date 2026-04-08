@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.env
+.env.example
+.DS_Store
+*.md
+LICENSE
+docker-compose.yml
+CLAUDE.md
