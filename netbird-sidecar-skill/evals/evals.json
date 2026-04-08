@@ -1,0 +1,23 @@
+{
+  "skill_name": "netbird-sidecar",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a Docker Compose project with a Node.js API (image: my-api:latest, port 3000) and a PostgreSQL database. I want all API traffic to go through NetBird VPN. My setup key is nb-setup-abc123 and I'm using the default management server. Can you help me set up the docker-compose.yml and .env?",
+      "expected_output": "A complete docker-compose.yml with netbird-sidecar service, the Node.js API using network_mode service:netbird-sidecar, PostgreSQL service, proper .env configuration, and correct capabilities/devices/volumes.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My netbird-sidecar container keeps showing 'unhealthy' status. docker compose logs shows 'Waiting for NetBird daemon...' repeated many times and then 'ERROR: NetBird daemon failed to start within 30s'. What's going on and how do I fix it?",
+      "expected_output": "Systematic troubleshooting guidance covering: checking capabilities (NET_ADMIN, SYS_ADMIN, SYS_RESOURCE), /dev/net/tun device, setup key validity, management URL reachability, and suggesting NB_ENTRYPOINT_SERVICE_TIMEOUT increase if needed.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need to upgrade NetBird from 0.67.4 to 0.71.0 in this project. What files do I need to change and what's the release process?",
+      "expected_output": "Step-by-step guide: edit Dockerfile ARG, test locally with docker build, update CHANGELOG.md, commit with version tag, and explain how CI/CD auto-publishes to Docker Hub.",
+      "files": []
+    }
+  ]
+}
