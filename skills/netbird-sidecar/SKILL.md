@@ -1,6 +1,17 @@
 ---
 name: netbird-sidecar
 description: "NetBird VPN sidecar container for Docker: configuration, deployment, integration, and development. Use this skill when working with NetBird VPN containers, Docker sidecar patterns for VPN routing, WireGuard-based container networking, or the netbird-sidecar image. Also trigger when the user asks about routing container traffic through a VPN, setting up a VPN sidecar in Docker Compose, connecting containers to a NetBird network, or developing/modifying the netbird-sidecar project (Dockerfile, entrypoint, CI/CD). Even short requests like 'add VPN sidecar', 'setup netbird', or 'container VPN routing' should trigger this skill."
+license: MIT
+metadata:
+  author: lyhcode
+  version: '1.0.0'
+tags:
+  - docker
+  - vpn
+  - netbird
+  - wireguard
+  - sidecar
+  - docker-compose
 ---
 
 # NetBird Sidecar
